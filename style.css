@@ -1,0 +1,177 @@
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+
+	font-family: Raleway, sans-serif;
+}
+
+#CORSET {
+	position: relative;
+	max-width: 1160px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+#CONTENT {
+	padding: 0 10px;
+}
+
+header {
+	min-height: 160px;
+}
+
+.header-logo {
+	position: absolute;
+}
+
+.header-logo img {
+	height: 100px;
+	margin-top: 15px;
+	margin-left: 35px;
+}
+
+.Nav {
+	float: right;
+	line-height: 100px;
+}
+
+.Nav > ul {
+	z-index: 2;
+}
+
+.Nav-item {
+	display: inline;
+}
+																							
+.Header-logo--mobile, .Header-menu--mobile {
+	display: none;
+}
+
+.Nav-item:hover > a {
+	color: #000;
+	background-color: #F4F4F4;
+}
+
+.Nav-item > a, .Nav-item > button {
+	display: inline-block;
+
+	color: #000;                                                                                                                                                                        
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+
+	min-width: 130px;
+	max-height: 120px;
+	padding: 40px 5px 0 5px;
+	background: transparent center 40px no-repeat;
+	/*background-size: contain*/
+	background-size: 36px 36px;
+	outline: none;
+}
+
+.Nav-item.home:hover > a {
+	background-color: #fff;
+}
+
+.Nav-item.menu > button {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background-position: 10px 0;
+	border: none;
+}
+
+.Nav-item.menu > a, .Nav-item.menu > button {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu.png");
+	background-position: 50%;
+}
+
+.Nav-item.menu:hover > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu.png");
+}
+
+.Nav-item.home > a, .Nav-item.home > button {
+	background-image: url("{{tpl:MIB_THEME}}/img/cocorico.png");
+}
+
+.Nav-item.home:hover > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/cocorico-on.png");
+}
+
+.Nav-item.chambres > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu-chambres.png");
+}
+
+.Nav-item.restaurant > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu-restaurant.png");
+}
+
+.Nav-item.bateau > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu-bateau.png");
+}
+
+.Nav-item.tarifs > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu-tarifs.png");
+}
+
+.Nav-item.reserver > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu-reserver.png");
+}
+
+.Nav-item.localisation > a {
+	background-image: url("{{tpl:MIB_THEME}}/img/menu-localisation.png");
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background-color: #333;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	font-weight: 300;
+}
+
+footer * {
+	height: 30px;
+	line-height: 30px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer div {
+	width:	auto;
+	margin: 0 auto;
+	padding-left: 200px;
+	font-size: 12px;
+}
+
+footer #tripadvisor-link {
+	float: left;
+	width: 56px;
+	background-image: url("{{tpl:MIB_THEME}}/img/tripadvisor-logo-small.png");
+	background-position: center;
+}
+
+footer #facebook-link {
+	float: left;
+	width: 30px;
+	background-image: url("{{tpl:MIB_THEME}}/img/facebook-logo-small.png");
+	background-position: center;
+}
+
+.show {
+	display: block;
+}
